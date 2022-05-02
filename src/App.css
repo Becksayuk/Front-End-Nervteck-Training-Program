@@ -1,0 +1,23 @@
+.container{
+  background-color: rgba(132, 147, 155, 0.934);
+  margin-top: 0%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+ 
+}
+.wrapper h1{
+  text-align: center;
+  width: 100%;
+ 
+}
+button{
+  background-color: rgb(255, 255, 255);
+  color: rgb(8, 8, 8);
+}
