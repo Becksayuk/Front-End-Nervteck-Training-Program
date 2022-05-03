@@ -14,20 +14,20 @@ function App() {
     <div>
       <div className="container"> 
     <h1> PhotoGallery</h1>
-     <input  type="text" name= "Search" placeholder="     Search Anything " onChange={event => setQuery(event.target.value)}  ></input>
+     <input  type="text" placeholder="     Search Anything " onChange={event => setQuery(event.target.value)}  ></input>
       </div> 
 
       <div className="wrapper">
          {data.filter(image =>{
-           if (query === ''){
+           if (query ===""){
              return image;
            }else if (image.name.toLowerCase().includes(query.toLowerCase())){
              return image;
            }
          })
-         .map(image => ( 
+         .map((image, index) => ( 
          <ImageCard 
-         key={image.name}
+         key={index}
          name= {image.name}
          description={image.desciption}
          rating={image.rating}
